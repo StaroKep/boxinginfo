@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Marck+Script&display=swap&subset=cyrillic');
+
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(235, 235, 235);
+    font-family: 'Roboto', serif;
+    background-color: rgb(10, 10, 10);
+}
+
+.poster {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.poster .background {
+    width: 120%;
+    height: 120%;
+    position: fixed;
+    top: -10%;
+    left: -10%;
+    z-index: 1;
+
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ), url("./images/background.jpg");
+    background-size: cover;
+    background-position: top;
+    filter: blur(8px);
+}
+
+.poster .background-video {
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    z-index: 1;
+    object-fit: cover;
+    filter: blur(8px);
+}
+
+.poster .background-gradient{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to top right, rgb(0, 0, 0), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.49), rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.87), rgb(0, 0, 0));
+}
+
+.poster .sub-title {
+    text-align: center;
+    line-height: 1.5;
+    z-index: 2;
+    font-weight: normal;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+    margin: 10px 0;
+    font-size: 31px;
+}
+
+.poster .author {
+    max-width: 580px;
+    width: 100%;
+    text-align: right;
+    z-index: 2;
+    font-size: 27px;
+    font-weight: normal;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+    margin-right: 30px;
+}
+
+.page {
+    min-width: 600px;
+    max-width: 980px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    line-height: 1.3;
+    margin: 50px auto;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: justify;
+    background-color: rgb(235, 235, 235);
+    color: rgb(20, 20, 20);
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(100, 100, 100, 0.2);
+    font-size: 18px;
+}
+
+.page .title {
+    text-align: center;
+    margin-top: 0;
+}
+
+.left-image {
+    display: inline;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.right-image {
+    display: inline;
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+.poster .background-personalities{
+    background-position: top;
+    background-image: url("./images/background-1.jpg");
+}
+
+.personalities-page .personalities {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.personalities-page .personality {
+    width: 250px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    margin: 0 20px 50px 20px;
+}
+
+.personalities-page .personality-1 {
+    background-position: center 30%;
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+    ), url('../assets/images/5.webp');
+}
+
+.personalities-page .personality-2 {
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+    ), url('../assets/images/6.jpg');
+}
+
+.personalities-page .personality-3 {
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+    ), url('../assets/images/7.jpg');
+}
+
+.personalities-page .personality-4 {
+    background-position: top;
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+    ), url('../assets/images/8.jpg');
+}
+
+.personalities-page .personality-5 {
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+    ), url('../assets/images/9.jpg');
+}
+
+.personalities-page .personality-6 {
+    background-position: top;
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+    ), url('../assets/images/10.jpg');
+}
+
+.personalities-page .personality-7 {
+    background-position: top;
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+    ), url('../assets/images/11.jpg');
+    margin-bottom: 0;
+}
+
+.personalities-page .personality-8 {
+    background-position: top;
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+    ), url('../assets/images/12.jpg');
+    margin-bottom: 0;
+}
+
+.personalities-page .personality-9 {
+    background-position: top;
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+    ), url('../assets/images/13.jpg');
+    margin-bottom: 0;
+}
+
+@media (max-width: 984px) {
+    .personalities-page .personality-7,
+    .personalities-page .personality-8{
+        margin-bottom: 50px;
+    }
+}
+
+.personalities-page .personality .description {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(235, 235, 235);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 21px;
+    font-weight: 500;
+    bottom: calc(-250px + 80px);
+    transition: .3s bottom;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+.personalities-page .personality .description .name {
+    line-height: 80px;
+    text-align: left;
+}
+.personalities-page .personality .description .info {
+    font-weight: 300;
+    font-size: 16px;
+    text-align: left;
+}
+
+.personalities-page .personality:hover .description {
+    bottom: 0;
+}
